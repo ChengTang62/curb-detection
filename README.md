@@ -8,7 +8,7 @@ Segment of point cloud in front of Davis Centre Library University of Waterloo: 
 ![pdc_dc.png](images/pdc_dc.png?raw=true "Point Cloud Segment in front of Davis Center Library")
 
 projected onto 2D plane according to intensity values: \
-<img src="images/projected_intensity.png" alt="projected_intensity.png" width="500" height="500"/>
+<img src="images/projected_intensity.png" alt="projected_intensity.png" width="500" height="500" margin-left= "auto" margin-right= "auto" display = "block"/>
 
 extracted crubs and draw on the original image: \
 ![labelled_intensity.png](images/labelled_intensity.png?raw=true "labelled_intensity.png")
@@ -17,7 +17,7 @@ Segment of point cloud between Engineering 7 University of Waterloo and the camp
 ![pcd_e7_plaza.png](images/pcd_e7_plaza.png?raw=true "Point Cloud Segment of the Side Walk between Engineering 7 and Campus Plaza")
 
 projected onto 2D plane according to z-axis values: \
-<img src="images/projected_z.png" alt="projected_intensity.png" width="500" height="300"/>
+<img src="images/projected_z.png" alt="projected_intensity.png" width="500" height="300" margin-left= "auto" margin-right= "auto" display = "block"/>
 
 extracted crubs and draw on the original image: \
 ![labelled_z.png](images/labelled_z.png?raw=true "labelled_z.png")
@@ -34,15 +34,15 @@ For MacOS, in the project directory, run:
 
 #### `conda env create -f curb_detection_macos.yml`
 
-to create the virtual enviroment for opencv
+to create the virtual enviroment for opencv, 
 
 #### `conda activate curb_detection`
 
-to activate the virtual environment
+to activate the virtual environment, 
 
 #### `jupyter-notebook`
 
-to launch jupyter notebook
+to launch jupyter notebook.
 
 In the project root directory, create an empty build folder:
 
@@ -61,7 +61,7 @@ to project the points on 2D image (saved as "projected_z.png") based on their x_
 
 #### `./flatten_intensity <PATH-TO-POINT-CLOUD-FILE>`
 
-to project the points on 2D image (saved as "projected_intensity.png") based on their intensity values (distinct materials)
+to project the points on 2D image (saved as "projected_intensity.png") based on their intensity values (distinct materials).
 
 Either program outputs the minimum x and y coordinates for later use in image processing to get the line's coordinates.
 
@@ -72,13 +72,13 @@ In the last cell of the notebook, change the x_min and y_min parameters to the o
 ## Limitations
 
 - Only one of the two measures can be applied each time on a single case.
-- Boundaries between the projected polygon and the empty space of the retangle-shape image potentially causes the algorithm to produce false positive
-- Scaling z-axis values linearly causes the side of the curb with less distinct values to be suppressed and not being detected properly; *only selecting one side* of the curb each time is therefore recommended
-- The labels (lines) do not pertain any information regarding z-axis 
+- Boundaries between the projected polygon and the empty space of the retangle-shape image potentially causes the algorithm to produce false positive.
+- Scaling z-axis values linearly causes the side of the curb with less distinct values to be suppressed and not being detected properly; *only selecting one side* of the curb each time is therefore recommended.
+- The labels (lines) do not pertain any information regarding z-axis.
 
 ## Future Work
 
-- Replace image processing in python with C++
+- Replace image processing in python with C++.
 - Merge the two measures in the future to provide one single optimized result for all cases.
-- Project the lines in 2D coordinates back to the point cloud with appropriate z-axis values
-- Implement better user interface
+- Project the lines in 2D coordinates back to the point cloud with appropriate z-axis values.
+- Implement better user interface.
