@@ -79,7 +79,7 @@ In the last cell of the notebook, change the x_min and y_min parameters to the o
 ## Future Work
 
 - Replace image processing in python with C++.
-- Merge the two measures in the future to provide one single optimized result for all cases.
+- Merge the two measures to provide one single optimized result for all cases.
 - Project the lines in 2D coordinates back to the point cloud with appropriate z-axis values.
 - Implement better user interface.
 
