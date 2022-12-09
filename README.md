@@ -4,22 +4,24 @@ This project contains programs that can be used to assist the side walk curb lab
 
 ## DEMO
 
-Segment of point cloud in front of Davis Centre Library University of Waterloo:
+Segment of point cloud in front of Davis Centre Library University of Waterloo: \
 ![pdc_dc.png](images/pdc_dc.png?raw=true "Point Cloud Segment in front of Davis Center Library")
 
-projected onto 2D plane according to intensity values:
+projected onto 2D plane according to intensity values: \
 ![pcd_e7_plaza.png](images/pcd_e7_plaza.png?raw=true "Point Cloud Segment of the Side Walk between Engineering 7 and Campus Plaza")
 
-extracted crubs and draw on the original image:
-![projected_intensity.png](images/projected_intensity.png?raw=true "projected_intensity.png")
+extracted crubs and draw on the original image: \
+<img src="images/projected_intensity.png" alt="projected_intensity.png" width="500" height="500"/>
+<!-- ![projected_intensity.png](images/projected_intensity.png?raw=true "projected_intensity.png") -->
 
-Segment of point cloud between Engineering 7 University of Waterloo and the campus plaza:
-![projected_z.png](images/projected_z.png?raw=true "projected_z.png")
+Segment of point cloud between Engineering 7 University of Waterloo and the campus plaza: \
+<img src="images/projected_intensity.png" alt="projected_intensity.png" width="500" height="500"/>
+<!-- ![projected_z.png](images/projected_z.png?raw=true "projected_z.png") -->
 
-projected onto 2D plane according to z-axis values:
+projected onto 2D plane according to z-axis values: \
 ![labelled_intensity.png](images/labelled_intensity.png?raw=true "labelled_intensity.png")
 
-extracted crubs and draw on the original image:
+extracted crubs and draw on the original image: \
 ![labelled_z.png](images/labelled_z.png?raw=true "labelled_z.png")
 
 > [!INFO]
