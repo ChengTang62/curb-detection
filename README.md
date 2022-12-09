@@ -55,7 +55,7 @@ and build the project:
 #### `cmake ..`
 #### `make`
 
-once built, the following approaches can be applied on a segmented point cloud: 
+Once built, the following approaches can be applied on a segmented point cloud: 
 
 #### `./flatten_z <PATH-TO-POINT-CLOUD-FILE>`
 
