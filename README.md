@@ -24,13 +24,13 @@ projected onto 2D plane according to z-axis values: \
 extracted curbs and draw on the original image: \
 ![labelled_z.png](images/labelled_z.png?raw=true "labelled_z.png")
 
-> **_INFO:_**  If segmenting point cloud directly is not feasible, functions in "crop_cloud.cpp" can also be used to crop point cloud programmatically. It takes a quadrilateral‘s four coordinates (for x and y axis only) and save the cropped point cloud into a file called "cropped_pcd.pcd".
-
-Please make sure to have CMake and Anaconda installed.
-
 > **_NOTE:_**  For simplicity sake the program is currently split into two parts for point cloud and image processing respectively; this should be revised in the future.
 
+> **_INFO:_**  If segmenting point cloud directly is not feasible, functions in "crop_cloud.cpp" can also be used to crop point cloud programmatically. It takes a quadrilateral‘s four coordinates (for x and y axis only) and save the cropped point cloud into a file called "cropped_pcd.pcd".
+
 ## Available Scripts
+
+Please make sure to have CMake and Anaconda installed.
 
 For MacOS, in the project directory, run:
 
@@ -69,13 +69,11 @@ Either program outputs the minimum x and y coordinates for later use in image pr
 
 In the last cell of the notebook, change the x_min and y_min parameters to the output of the program then run all cells; a tuple of four values indicating the location of the curb will be printed.
 
-> **_NOTE:_**  If segmenting point cloud directly is not feasible, functions in "crop_cloud.cpp" can also be used to crop point cloud programmatically. It takes a quadrilateral‘s four coordinates (for x and y axis only) and save the cropped point cloud into a file called "cropped_pcd.pcd".
-
 ## Limitations
 
 - Only one of the two measures can be applied each time on a single case.
 - Boundaries between the projected polygon and the empty space of the rectangle-shape image potentially causes the algorithm to produce false positive.
-- Scaling z-axis values linearly cause the side of the curb with less distinct values to be suppressed and not being detected properly; *only selecting one side* of the curb each time is therefore recommended.
+- Scaling z-axis values linearly cause the side of the curb with less distinct values to be suppressed and not being detected properly; *only selecting one side* of the curb each time is therefore recommended **as oppose to the demo shown above**.
 - The labels (lines) do not pertain any information regarding z-axis.
 
 ## Future Work
