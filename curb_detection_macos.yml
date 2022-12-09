@@ -1,0 +1,21 @@
+name: curb-detection
+channels:
+  - menpo
+  - conda-forge
+  - defaults
+dependencies:
+  - conda=4.5.11
+  - jupyter=1.0.0
+  - keras=2.2.2
+  - libopencv=3.4.2
+  - numpy=1.15.1
+  - opencv=3.4.2
+  - pandas=0.23.4
+  - pillow=5.3.0
+  - pip=10.0.1
+  - python=3.6.6
+  - scikit-learn=0.19.1
+  - scipy=1.1.0
+  - tensorflow=1.10.0
+prefix: /anaconda3/envs/curb_detection
+
