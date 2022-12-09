@@ -19,8 +19,8 @@ Segment of point cloud in front of Davis Centre Library University of Waterloo: 
 ![pdc_dc.png](images/pdc_dc.png?raw=true "Point Cloud Segment in front of Davis Center Library")
 
 projected onto 2D plane according to intensity values: \
-<!-- <img src="images/projected_intensity.png" alt="projected_intensity.png" width="500" height="500"/> -->
-![projected_intensity.png](images/projected_intensity.png?raw=true "Projected 2D image according to intensity value")
+<img src="images/projected_intensity.png" alt="projected_intensity.png" width="100%" height="500"/>
+<!-- ![projected_intensity.png](images/projected_intensity.png?raw=true "Projected 2D image according to intensity value") -->
 
 extracted crubs and draw on the original image: \
 ![labelled_intensity.png](images/labelled_intensity.png?raw=true "labelled_intensity.png")
@@ -29,8 +29,8 @@ Segment of point cloud between Engineering 7 University of Waterloo and the camp
 ![pcd_e7_plaza.png](images/pcd_e7_plaza.png?raw=true "Point Cloud Segment of the Side Walk between Engineering 7 and Campus Plaza")
 
 projected onto 2D plane according to z-axis values: \
-<!-- <img src="images/projected_z.png" alt="projected_intensity.png" width="500" height="300"/> -->
-![projected_z.png](images/projected_z.png?raw=true "Projected 2D image according to z value")
+<img src="images/projected_z.png" alt="projected_intensity.png" width="100%" height="300"/>
+<!-- ![projected_z.png](images/projected_z.png?raw=true "Projected 2D image according to z value") -->
 
 extracted crubs and draw on the original image: \
 ![labelled_z.png](images/labelled_z.png?raw=true "labelled_z.png")
