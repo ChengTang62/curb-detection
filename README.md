@@ -1,3 +1,14 @@
+<style>
+img
+{
+    display:block;
+    float:none;
+    margin-left:auto;
+    margin-right:auto;
+}
+</style>
+
+
 # Curb Detection with LiDAR Point Cloud
 
 This project contains programs that can be used to assist the side walk curb labelling process for HD map - input selected area output label coordinates.
