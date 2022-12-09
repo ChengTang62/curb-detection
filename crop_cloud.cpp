@@ -61,22 +61,22 @@ int
 main (int argc, char** argv)
 {
     point2d p1;
-    p1.x = 37052;
-    p1.y = 13436;
+    p1.x = std::stod(argv[1]);
+    p1.y = std::stod(argv[2]);
     point2d p2;
-    p2.x = 37098;
-    p2.y = 13462;
+    p2.x = std::stod(argv[3]);
+    p2.y = std::stod(argv[4]);
     point2d p3;
-    p3.x = 37147;
-    p3.y = 13390;
+    p3.x = std::stod(argv[5]);
+    p3.y = std::stod(argv[6]);
     point2d p4;
-    p4.x = 37098;
-    p4.y = 13358;
+    p4.x = std::stod(argv[7]);
+    p4.y = std::stod(argv[8]);
 
     pcl::PointCloud<pcl::PointXYZI>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZI>);
     pcl::PointCloud<pcl::PointXYZI> cloud2;
 
-    if (pcl::io::loadPCDFile<pcl::PointXYZI> (argv[1], *cloud) == -1) //* load the file
+    if (pcl::io::loadPCDFile<pcl::PointXYZI> (argv[9], *cloud) == -1) //* load the file
     {
         PCL_ERROR ("Couldn't read file\n");
         return (-1);

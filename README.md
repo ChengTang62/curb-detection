@@ -26,8 +26,6 @@ extracted curbs and draw on the original image: \
 
 > **_NOTE:_**  For simplicity sake the program is currently split into two parts for point cloud and image processing respectively; this should be revised in the future.
 
-> **_INFO:_**  If segmenting point cloud directly is not feasible, functions in "crop_cloud.cpp" can also be used to crop point cloud programmatically. It takes a quadrilateral‘s four coordinates (for x and y axis only) and save the cropped point cloud into a file called "cropped_pcd.pcd".
-
 ## Available Scripts
 
 Please make sure to have CMake and Anaconda installed.
@@ -68,6 +66,9 @@ to project the points on 2D image (saved as "projected_intensity.png") based on 
 Either program outputs the minimum x and y coordinates for later use in image processing to get the line's coordinates.
 
 In the last cell of the notebook, change the x_min and y_min parameters to the output of the program then run all cells; a tuple of four values indicating the location of the curb will be printed.
+
+> **_INFO:_**  If segmenting point cloud directly is not feasible, functions in "crop_cloud.cpp" can also be used to crop point cloud programmatically. It takes a quadrilateral‘s coordinates of the four points defined counterclockwise or clockwise sequencially (for x and y-axis) and save the cropped point cloud into a file called "cropped_pcd.pcd".
+> #### `./crop_cloud <POINT1-X> <POINT1-Y> <POINT2-X> <POINT2-Y> <POINT3-X> <POINT3-Y> <POINT4-X> <POINT4-Y> <PATH-TO-POINT-CLOUD-FILE>`
 
 ## Limitations
 
