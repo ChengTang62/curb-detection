@@ -67,8 +67,7 @@ Either program outputs the minimum x and y coordinates for later use in image pr
 
 In the last cell of the notebook, change the x_min and y_min parameters to the output of the program then run all cells; a tuple of four values indicating the location of the curb will be printed.
 
-> [!INFO]
-> If segmenting point cloud directly is not feasible, functions in "crop_cloud.cpp" can also be used to crop point cloud programmatically. It takes a quadrilateral‘s four coordinates (for x and y axis only) and save the cropped point cloud into a file called "cropped_pcd.pcd".
+> **_NOTE:_**  If segmenting point cloud directly is not feasible, functions in "crop_cloud.cpp" can also be used to crop point cloud programmatically. It takes a quadrilateral‘s four coordinates (for x and y axis only) and save the cropped point cloud into a file called "cropped_pcd.pcd".
 
 ## Limitations
 
