@@ -1,17 +1,6 @@
-<style>
-img
-{
-    display:block;
-    float:none;
-    margin-left:auto;
-    margin-right:auto;
-}
-</style>
-
-
 # Curb Detection with LiDAR Point Cloud
 
-This project contains programs that can be used to assist the side walk curb labelling process for HD map - input selected area output label coordinates.
+This project contains programs that can be used to assist the sidewalk curb labelling process for HD map - input selected area output label coordinates.
 
 ## DEMO
 
@@ -32,12 +21,12 @@ projected onto 2D plane according to z-axis values: \
 <img src="images/projected_z.png" alt="projected_intensity.png" width="100%"/>
 <!-- ![projected_z.png](images/projected_z.png?raw=true "Projected 2D image according to z value") -->
 
-extracted crubs and draw on the original image: \
+extracted curbs and draw on the original image: \
 ![labelled_z.png](images/labelled_z.png?raw=true "labelled_z.png")
 
 > **_INFO:_**  If segmenting point cloud directly is not feasible, functions in "crop_cloud.cpp" can also be used to crop point cloud programmatically. It takes a quadrilateral‘s four coordinates (for x and y axis only) and save the cropped point cloud into a file called "cropped_pcd.pcd".
 
-Please make sure to have cmake and anaconda installed.
+Please make sure to have CMake and Anaconda installed.
 
 > **_NOTE:_**  For simplicity sake the program is currently split into two parts for point cloud and image processing respectively; this should be revised in the future.
 
@@ -47,7 +36,7 @@ For MacOS, in the project directory, run:
 
 #### `conda env create -f curb_detection_macos.yml`
 
-to create the virtual enviroment for opencv, 
+to create the virtual environment for OpenCV, 
 
 #### `conda activate curb_detection`
 
@@ -85,8 +74,8 @@ In the last cell of the notebook, change the x_min and y_min parameters to the o
 ## Limitations
 
 - Only one of the two measures can be applied each time on a single case.
-- Boundaries between the projected polygon and the empty space of the retangle-shape image potentially causes the algorithm to produce false positive.
-- Scaling z-axis values linearly causes the side of the curb with less distinct values to be suppressed and not being detected properly; *only selecting one side* of the curb each time is therefore recommended.
+- Boundaries between the projected polygon and the empty space of the rectangle-shape image potentially causes the algorithm to produce false positive.
+- Scaling z-axis values linearly cause the side of the curb with less distinct values to be suppressed and not being detected properly; *only selecting one side* of the curb each time is therefore recommended.
 - The labels (lines) do not pertain any information regarding z-axis.
 
 ## Future Work
@@ -95,3 +84,4 @@ In the last cell of the notebook, change the x_min and y_min parameters to the o
 - Merge the two measures in the future to provide one single optimized result for all cases.
 - Project the lines in 2D coordinates back to the point cloud with appropriate z-axis values.
 - Implement better user interface.
+
