@@ -8,62 +8,58 @@ Segment of point cloud in front of Davis Centre Library University of Waterloo: 
 ![pdc_dc.png](images/pdc_dc.png?raw=true "Point Cloud Segment in front of Davis Center Library")
 
 projected onto 2D plane according to intensity values: \
-![pcd_e7_plaza.png](images/pcd_e7_plaza.png?raw=true "Point Cloud Segment of the Side Walk between Engineering 7 and Campus Plaza")
+<img src="images/projected_intensity.png" alt="projected_intensity.png" width="500" height="500"/>
 
 extracted crubs and draw on the original image: \
-<img src="images/projected_intensity.png" alt="projected_intensity.png" width="500" height="500"/>
-<!-- ![projected_intensity.png](images/projected_intensity.png?raw=true "projected_intensity.png") -->
+![labelled_intensity.png](images/labelled_intensity.png?raw=true "labelled_intensity.png")
 
 Segment of point cloud between Engineering 7 University of Waterloo and the campus plaza: \
-<img src="images/projected_intensity.png" alt="projected_intensity.png" width="500" height="500"/>
-<!-- ![projected_z.png](images/projected_z.png?raw=true "projected_z.png") -->
+![pcd_e7_plaza.png](images/pcd_e7_plaza.png?raw=true "Point Cloud Segment of the Side Walk between Engineering 7 and Campus Plaza")
 
 projected onto 2D plane according to z-axis values: \
-![labelled_intensity.png](images/labelled_intensity.png?raw=true "labelled_intensity.png")
+<img src="images/projected_z.png" alt="projected_intensity.png" width="500" height="500"/>
 
 extracted crubs and draw on the original image: \
 ![labelled_z.png](images/labelled_z.png?raw=true "labelled_z.png")
 
-> [!INFO]
-> If segmenting point cloud directly is not feasible, functions in "crop_cloud.cpp" can also be used to crop point cloud programmatically. It takes a quadrilateral‘s four coordinates (for x and y axis only) and save the cropped point cloud into a file called "cropped_pcd.pcd".
+> **_INFO:_**  If segmenting point cloud directly is not feasible, functions in "crop_cloud.cpp" can also be used to crop point cloud programmatically. It takes a quadrilateral‘s four coordinates (for x and y axis only) and save the cropped point cloud into a file called "cropped_pcd.pcd".
 
 Please make sure to have cmake and anaconda installed.
 
-> [!NOTE]
-> For simplicity sake the program is currently split into two parts for point cloud and image processing respectively; this should be revised in the future.
+> **_NOTE:_**  For simplicity sake the program is currently split into two parts for point cloud and image processing respectively; this should be revised in the future.
 
 ## Available Scripts
 
 For MacOS, in the project directory, run:
 
-### `conda env create -f curb_detection_macos.yml`
+#### `conda env create -f curb_detection_macos.yml`
 
 to create the virtual enviroment for opencv
 
-### `conda activate curb_detection`
+#### `conda activate curb_detection`
 
 to activate the virtual environment
 
-### `jupyter-notebook`
+#### `jupyter-notebook`
 
 to launch jupyter notebook
 
 In the project root directory, create an empty build folder:
 
-### `mkdir build`
+#### `mkdir build`
 
 and build the project:
 
-### `cmake ..`
-### `make`
+#### `cmake ..`
+#### `make`
 
 once built, the following approaches can be applied on a segmented point cloud: 
 
-### `./flatten_z <PATH-TO-POINT-CLOUD-FILE>`
+#### `./flatten_z <PATH-TO-POINT-CLOUD-FILE>`
 
 to project the points on 2D image (saved as "projected_z.png") based on their x_axis values (distinct heights), or: 
 
-### `./flatten_intensity <PATH-TO-POINT-CLOUD-FILE>`
+#### `./flatten_intensity <PATH-TO-POINT-CLOUD-FILE>`
 
 to project the points on 2D image (saved as "projected_intensity.png") based on their intensity values (distinct materials)
 
