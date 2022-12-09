@@ -17,7 +17,7 @@ Segment of point cloud between Engineering 7 University of Waterloo and the camp
 ![pcd_e7_plaza.png](images/pcd_e7_plaza.png?raw=true "Point Cloud Segment of the Side Walk between Engineering 7 and Campus Plaza")
 
 projected onto 2D plane according to z-axis values: \
-<img src="images/projected_z.png" alt="projected_intensity.png" width="500" height="500"/>
+<img src="images/projected_z.png" alt="projected_intensity.png" width="500" height="300"/>
 
 extracted crubs and draw on the original image: \
 ![labelled_z.png](images/labelled_z.png?raw=true "labelled_z.png")
