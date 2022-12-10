@@ -74,7 +74,7 @@ In the last cell of the notebook, change the x_min and y_min parameters to the o
 
 - Only one of the two measures can be applied each time on a single case.
 - Boundaries between the projected polygon and the empty space of the rectangle-shape image potentially causes the algorithm to produce false positive.
-- Scaling z-axis values linearly cause the side of the curb with less distinct values to be suppressed and not being detected properly; *only selecting one side* of the curb each time is therefore recommended **as oppose to the demo shown above**.
+- Scaling z-axis values linearly cause the side of the curb with less distinct values to be suppressed and not being detected properly; *only selecting one side* of the curb each time is therefore recommended **as opposed to the demo shown above**.
 - The labels (lines) do not pertain any information regarding z-axis.
 
 ## Future Work
