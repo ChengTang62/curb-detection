@@ -4,24 +4,31 @@ This project contains programs that can be used to assist the sidewalk curb labe
 
 ## DEMO
 
-Segment of point cloud in front of Davis Centre Library University of Waterloo: \
+Segment of point cloud in front of the Davis Centre Library University of Waterloo:
+
 ![pdc_dc.png](images/pdc_dc.png?raw=true "Point Cloud Segment in front of Davis Center Library")
 
-projected onto 2D plane according to intensity values: \
+Projected onto 2D plane according to intensity values:
+
 <img src="images/projected_intensity.png" alt="projected_intensity.png" width="100%"/>
 <!-- ![projected_intensity.png](images/projected_intensity.png?raw=true "Projected 2D image according to intensity value") -->
 
-extracted crubs and draw on the original image: \
+Extracted crubs and drew on the original image:
+
 ![labelled_intensity.png](images/labelled_intensity.png?raw=true "labelled_intensity.png")
 
-Segment of point cloud between Engineering 7 University of Waterloo and the campus plaza: \
+Segment of point cloud between Engineering 7 University of Waterloo and the campus plaza:
+
 ![pcd_e7_plaza.png](images/pcd_e7_plaza.png?raw=true "Point Cloud Segment of the Side Walk between Engineering 7 and Campus Plaza")
 
-projected onto 2D plane according to z-axis values: \
+Projected onto 2D plane according to z-axis values:
+
 <img src="images/projected_z.png" alt="projected_intensity.png" width="100%"/>
+
 <!-- ![projected_z.png](images/projected_z.png?raw=true "Projected 2D image according to z value") -->
 
-extracted curbs and draw on the original image: \
+Extracted curbs and draw on the original image:
+
 ![labelled_z.png](images/labelled_z.png?raw=true "labelled_z.png")
 
 > **_NOTE:_**  For simplicity sake the program is currently split into two parts for point cloud and image processing respectively; this should be revised in the future.
@@ -57,7 +64,7 @@ Once built, the following approaches can be applied on a segmented point cloud:
 
 #### `./flatten_z <PATH-TO-POINT-CLOUD-FILE>`
 
-to project the points on 2D image (saved as "projected_z.png") based on their x_axis values (distinct heights), or: 
+to project the points on 2D image (saved as "projected_z.png") based on their z_axis values (distinct heights), or: 
 
 #### `./flatten_intensity <PATH-TO-POINT-CLOUD-FILE>`
 
@@ -74,7 +81,7 @@ In the last cell of the notebook, change the x_min and y_min parameters to the o
 
 - Only one of the two measures can be applied each time on a single case.
 - Boundaries between the projected polygon and the empty space of the rectangle-shape image potentially causes the algorithm to produce false positive.
-- Scaling z-axis values linearly cause the side of the curb with less distinct values to be suppressed and not being detected properly; *only selecting one side* of the curb each time is therefore recommended **as opposed to the demo shown above**.
+- Scaling z-axis values linearly causes the side of the curb with less distinct values to be suppressed and not being detected properly; *only selecting one side* of the curb each time is therefore recommended **as opposed to the demo shown above**.
 - The labels (lines) do not pertain any information regarding z-axis.
 
 ## Future Work
